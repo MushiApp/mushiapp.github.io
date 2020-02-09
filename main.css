@@ -1,45 +1,213 @@
-html, body {
-    background-color: #000000;
-    height: 100%;
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    color: #3C5490;
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    padding: 60px 0;
+}
+
+a {
+    color: #3C5490;
+}
+
+span {
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-family: 'Poiret One', cursive;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 880px) {
+  .container {
+    width: 80%;
+  }
+}
+
+#menu {
+    width: 70%;
+    float: right;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 880px) {
+  #menu {
+    visibility: hidden;
+  }
+}
+
+#menu ul {
     margin: 0;
+    padding: 20px 0px 0px;
+    text-align: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 5%;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 50px;
+    z-index: 100;
+    width: 100%;
+    margin: 0px auto;
+}
+
+header {
+    height: 876px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    background-image: url(images/background.jpg);
+    background-repeat: repeat-x;
+    background-size: 822px 876px;
+}
+
+header .hero {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+header img {
+    margin: 0 auto;
+    display: block;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+
+header span {
+    font-style: italic;
+}
+
+#about {
+    background-color: #FF33B1;
+}
+
+#contact {
+    background-color: #3C5490;
+}
+
+.light {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#packages ul {
+    list-style-type: none;
+    margin-top: 30px;
+    display: table;
+    width: 100%;
     padding: 0;
 }
 
-h1, .main-link {
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
-    font-size: 4.5em;
+#packages li {
     display: table-cell;
-    color: white;
-    vertical-align: middle;
+    float: left;
+    margin-right: 5%;
+    max-width: 28%;
+}
+
+@media only screen and (max-width: 880px) {
+  #packages h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #packages li {
+    max-width: 100%;
+    margin: 10% 0;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #packages img {
+    margin: auto;
+    display: block;
+  }
+}
+
+#deals ul {
+    padding: 0;
+}
+
+#deals li {
+    background: url(images/check.svg) no-repeat left;
+    padding: 20px 0px 20px 50px;
+    list-style: none;
     margin: 0;
-    text-decoration: none;
-    border: 0;
 }
 
-.title, #gradient {
-    display: table;
-    width: 100%;
-    overflow: hidden;
-    min-height: 100%;
-  padding: 0px;
-  margin: 0px;
+@media only screen and (max-width: 880px) {
+  #deals img {
+    visibility: hidden;
+  }
 }
 
-.body {
-    color: white;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;    
+#deals .text {
+    max-width: 59%;
+    display: inline-block;
 }
 
-h3 {
-    font-family: 'Ovo', serif;
+@media only screen and (max-width: 880px) {
+  #deals .text {
+      max-width: 100%;
+  }
 }
 
-p {
-    font-family: 'Ovo', serif;
+#deals img {
+    max-width: 40%;
+    display: inline-block;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 880px) {
+  #contact p {
+    font-size: 1.5em;
+  }
 }
