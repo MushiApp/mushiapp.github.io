@@ -1,3 +1,3 @@
-# Super Duper Bros
+# Mushi
 
 Landing page.
