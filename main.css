@@ -207,6 +207,7 @@ header span {
     position: absolute;
     left: 65%;
     top: 35%;
+    animation: bone 3.6s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 880px) {
@@ -224,6 +225,20 @@ header span {
     }
 }
 
+@keyframes bone {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 #moon {
     width: 178px;
     height: 178px;
@@ -231,6 +246,7 @@ header span {
     left: 30%;
     top: 7%;
     z-index: 1;
+    animation: moon 4.8s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 880px) {
@@ -246,12 +262,27 @@ header span {
     }
 }
 
+@keyframes moon {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(12px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 #dog {
     width: 270px;
     height: 270px;
     position: absolute;
     left: 21%;
     top: 50%;
+    animation: dog 4s ease-in-out infinite;
 }
 
 
@@ -272,6 +303,19 @@ header span {
     }
 }
 
+@keyframes dog {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
 
 #planet-blue {
     width: 123px;
@@ -280,11 +324,26 @@ header span {
     left: 20%;
     top: 35%;
     z-index: 1;
+    animation: planet-blue 4s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 880px) {
     #planet-blue {
         display: none;
+    }
+}
+
+@keyframes planet-blue {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-15px)
+    }
+
+    100% {
+        transform: translateY(0)
     }
 }
 
@@ -294,6 +353,7 @@ header span {
     position: absolute;
     left: 70%;
     top: 10%;
+    animation: sat 4s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 880px) {
@@ -304,12 +364,41 @@ header span {
     }
 }
 
+@keyframes sat {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-15px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 #planet-purple {
     width: 189px;
     height: 189px;
     position: absolute;
     left: 65%;
     top: 55%;
+    animation: planet-purple 4.5s ease-in-out infinite;
+}
+
+@keyframes planet-purple {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @media only screen and (max-width: 880px) {
@@ -332,6 +421,7 @@ header span {
     position: absolute;
     left: 15%;
     top: 15%;
+    animation: planet-yellow 4.8s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 880px) {
@@ -340,8 +430,22 @@ header span {
     }
 }
 
+@keyframes planet-yellow {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(12px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 input[type=email] {
-    padding: 12px 10px 12px 10px;
+    padding: 12px;
     margin: 8px 4px;
     display: inline-block;
     border: 0px solid #ccc;
