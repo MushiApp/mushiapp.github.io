@@ -123,12 +123,6 @@ header {
     background-size: 822px 876px;
 }
 
-@media only screen and (max-width: 880px) {
-    header img {
-        height: 650px;
-    }
-}
-
 header .hero {
     display: block;
     margin: 0 auto;
@@ -154,6 +148,8 @@ header p {
     font-size: 1.3em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    position: relative;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 880px) {
@@ -183,6 +179,14 @@ header span {
     top: 35%;
 }
 
+@media only screen and (max-width: 880px) {
+    #bone {
+        width: 70px;
+        height: 70px;
+        left: 75%;
+    }
+}
+
 #moon {
     width: 178px;
     height: 178px;
@@ -190,6 +194,13 @@ header span {
     left: 30%;
     top: 7%;
     z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+    #moon {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 #dog {
@@ -200,12 +211,23 @@ header span {
     top: 50%;
 }
 
+
+@media only screen and (max-width: 880px) {
+    #dog {
+        width: 150px;
+        height: 150px;
+        left: 5%;
+    }
+}
+
+
 #planet-blue {
     width: 123px;
     height: 123px;
     position: absolute;
     left: 20%;
     top: 35%;
+    z-index: 1;
 }
 
 #sat {
@@ -216,12 +238,28 @@ header span {
     top: 10%;
 }
 
+@media only screen and (max-width: 880px) {
+    #sat {
+        width: 70px;
+        height: 70px;
+        left: 85%;
+    }
+}
+
 #planet-purple {
     width: 189px;
     height: 189px;
     position: absolute;
     left: 65%;
     top: 55%;
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-purple {
+        width: 80px;
+        height: 80px;
+        left: 75%;
+    }
 }
 
 #planet-yellow {
@@ -243,6 +281,8 @@ input[type=email] {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     width: 70%;
+    position: relative;
+    z-index: 2;
 }
 
 input[type=submit] {
@@ -257,6 +297,8 @@ input[type=submit] {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     width: 24%;
+    position: relative;
+    z-index: 2;
 }
 
 .form-sub {
@@ -266,6 +308,8 @@ input[type=submit] {
     font-size: 0.7em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    position: relative;
+    z-index: 2;
 }
 
 .light {
