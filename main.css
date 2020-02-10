@@ -5,7 +5,7 @@ html {
 body {
     background: #fff;
     color: #3C5490;
-    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.5;
     margin: 0 auto;
@@ -20,7 +20,6 @@ footer {
 section {
     display: inline-block;
     width: 100%;
-    padding: 60px 0;
 }
 
 a {
@@ -33,7 +32,7 @@ span {
 
 h1,
 h2 {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .container {
@@ -44,9 +43,23 @@ h2 {
 }
 
 @media only screen and (max-width: 880px) {
-  .container {
-    width: 80%;
-  }
+    .container {
+        width: 80%;
+    }
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 880px) {
+    .form-container {
+        width: 80%;
+        max-width: 280px;
+    }
 }
 
 #menu {
@@ -56,9 +69,10 @@ h2 {
 }
 
 @media only screen and (max-width: 880px) {
-  #menu {
-    visibility: hidden;
-  }
+    #menu {
+        float: none;
+        width: 100%;
+    }
 }
 
 #menu ul {
@@ -67,10 +81,24 @@ h2 {
     text-align: right;
 }
 
+@media only screen and (max-width: 880px) {
+    #menu ul {
+        text-align: center;
+         !important
+    }
+}
+
 #menu ul li {
     display: inline-block;
     margin-right: 5%;
     color: white;
+}
+
+@media only screen and (max-width: 880px) {
+    #menu ul li {
+        margin-right: 0%;
+        padding: 0 20px;
+    }
 }
 
 nav {
@@ -86,17 +114,22 @@ nav {
 }
 
 header {
-    height: 876px;
+    height: 700px;
     position: relative;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     background-image: url(images/background.jpg);
     background-repeat: repeat-x;
     background-size: 822px 876px;
 }
 
+@media only screen and (max-width: 880px) {
+    header img {
+    height: 650px;
+    }
+}
+
 header .hero {
-    max-width: 500px;
     display: block;
     margin: 0 auto;
     margin-top: 130px;
@@ -107,24 +140,73 @@ header img {
     display: block;
 }
 
+@media only screen and (max-width: 880px) {
+    header img {
+        width: 60%;
+    }
+}
+
 header p {
     color: white;
     text-align: center;
     font-size: 1.3em;
-    font-family: 'Poiret One', cursive;
-    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 880px) {
+    header p {
+        font-size: 1em;
+    }
+}
+
+header form {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
 }
 
 header span {
     font-style: italic;
 }
 
-#about {
-    background-color: #FF33B1;
+input[type=email] {
+    padding: 12px 10px 12px 10px;
+    margin: 8px 4px;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 14px 4px 4px 14px;
+    box-sizing: border-box;
+    font-size: 0.6em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    width: 70%;
 }
 
-#contact {
-    background-color: #3C5490;
+input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 10px 12px 10px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 4px 14px 14px 4px;
+    cursor: pointer;
+    font-size: 0.6em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    width: 24%;
+}
+
+.form-sub {
+    padding-top: 0;
+    margin-top: 0;
+    color: black;
+    font-size: 0.7em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 
 .light {
@@ -133,81 +215,11 @@ header span {
     text-decoration: none;
 }
 
-#packages ul {
-    list-style-type: none;
-    margin-top: 30px;
-    display: table;
-    width: 100%;
-    padding: 0;
+#footer {
+    margin: 30px 0;
 }
 
-#packages li {
-    display: table-cell;
-    float: left;
-    margin-right: 5%;
-    max-width: 28%;
-}
-
-@media only screen and (max-width: 880px) {
-  #packages h3 {
+#footer p {
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 880px) {
-  #packages li {
-    max-width: 100%;
-    margin: 10% 0;
-  }
-}
-
-@media only screen and (max-width: 880px) {
-  #packages img {
-    margin: auto;
-    display: block;
-  }
-}
-
-#deals ul {
-    padding: 0;
-}
-
-#deals li {
-    background: url(images/check.svg) no-repeat left;
-    padding: 20px 0px 20px 50px;
-    list-style: none;
-    margin: 0;
-}
-
-@media only screen and (max-width: 880px) {
-  #deals img {
-    visibility: hidden;
-  }
-}
-
-#deals .text {
-    max-width: 59%;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 880px) {
-  #deals .text {
-      max-width: 100%;
-  }
-}
-
-#deals img {
-    max-width: 40%;
-    display: inline-block;
-}
-
-#contact p {
-    text-align: center;
-    font-size: 2em;
-}
-
-@media only screen and (max-width: 880px) {
-  #contact p {
-    font-size: 1.5em;
-  }
+    font-size: 0.7em;
 }
