@@ -123,6 +123,12 @@ header {
     background-size: 822px 876px;
 }
 
+@media only screen and (max-width: 880px) {
+    header {
+        background-size: 822px 776px;
+    }
+}
+
 header .hero {
     display: block;
     margin: 0 auto;
@@ -187,6 +193,13 @@ header span {
     }
 }
 
+@media only screen and (max-width: 380px) {
+    #bone {
+        left: 45%;
+        top: 55%;
+    }
+}
+
 #moon {
     width: 178px;
     height: 178px;
@@ -203,6 +216,12 @@ header span {
     }
 }
 
+@media only screen and (max-width: 380px) {
+    #moon {
+        left: 5%;
+    }
+}
+
 #dog {
     width: 270px;
     height: 270px;
@@ -216,7 +235,15 @@ header span {
     #dog {
         width: 150px;
         height: 150px;
-        left: 5%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #dog {
+        width: 150px;
+        height: 150px;
+        left: 0%;
     }
 }
 
@@ -228,6 +255,12 @@ header span {
     left: 20%;
     top: 35%;
     z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-blue {
+        display: none;
+    }
 }
 
 #sat {
@@ -242,7 +275,7 @@ header span {
     #sat {
         width: 70px;
         height: 70px;
-        left: 85%;
+        left: 80%;
     }
 }
 
@@ -268,6 +301,12 @@ header span {
     position: absolute;
     left: 15%;
     top: 15%;
+}
+
+@media only screen and (max-width: 880px) {
+    #planet-yellow {
+        display: none;
+    }
 }
 
 input[type=email] {
@@ -318,8 +357,23 @@ input[type=submit] {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 880px) {
+    #letter {
+        position: relative;
+        top: -120px;
+    }
+}
+
 #footer {
     margin: 30px 0;
+}
+
+@media only screen and (max-width: 880px) {
+    #footer {
+        margin: 30px 0 0 0;
+        position: relative;
+        top: -100px;
+    }
 }
 
 #footer p {
