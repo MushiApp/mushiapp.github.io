@@ -57,8 +57,7 @@ h2 {
 
 @media only screen and (max-width: 880px) {
     .form-container {
-        width: 80%;
-        max-width: 280px;
+        max-width: 300px;
     }
 }
 
@@ -351,7 +350,7 @@ input[type=email] {
     font-size: 0.6em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    width: 70%;
+    width: 65%;
     position: relative;
     z-index: 2;
 }
@@ -368,7 +367,7 @@ input[type=submit] {
     font-size: 0.6em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
-    width: 24%;
+    width: 28%;
     position: relative;
     z-index: 2;
 }
