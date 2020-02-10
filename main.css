@@ -125,7 +125,7 @@ header {
 
 @media only screen and (max-width: 880px) {
     header img {
-    height: 650px;
+        height: 650px;
     }
 }
 
@@ -138,6 +138,8 @@ header .hero {
 header img {
     margin: 0 auto;
     display: block;
+    position: relative;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 880px) {
@@ -171,6 +173,63 @@ header form {
 
 header span {
     font-style: italic;
+}
+
+#bone {
+    width: 111px;
+    height: 111px;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+}
+
+#moon {
+    width: 178px;
+    height: 178px;
+    position: absolute;
+    left: 30%;
+    top: 7%;
+    z-index: 1;
+}
+
+#dog {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    left: 21%;
+    top: 50%;
+}
+
+#planet-blue {
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+
+#sat {
+    width: 117px;
+    height: 117px;
+    position: absolute;
+        left: 71.4%;
+    top: 20%;
+}
+
+#planet-purple {
+    width: 189px;
+    height: 189px;
+    position: absolute;
+    left: 65%;
+    top: 25%;
+}
+
+#planet-yellow {
+    width: 89px;
+    height: 89px;
+    position: absolute;
+        left: 71.4%;
+    top: 20%;
 }
 
 input[type=email] {
