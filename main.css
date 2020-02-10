@@ -113,6 +113,12 @@ nav {
     margin: 0px auto;
 }
 
+@media only screen and (max-width: 880px) {
+    nav {
+        padding: 5px 0 0 0;
+    }
+}
+
 header {
     height: 700px;
     position: relative;
@@ -129,10 +135,23 @@ header {
     }
 }
 
+@media only screen and (max-width: 380px) {
+    header {
+        height: 580px;
+        background-size: 822px 600px;
+    }
+}
+
 header .hero {
     display: block;
     margin: 0 auto;
     margin-top: 130px;
+}
+
+@media only screen and (max-width: 380px) {
+    header .hero {
+        margin-top: 100px;
+    }
 }
 
 header img {
@@ -173,6 +192,12 @@ header form {
     padding: 10px 0;
 }
 
+@media only screen and (max-width: 380px) {
+    header form {
+        padding: 0;
+    }
+}
+
 header span {
     font-style: italic;
 }
@@ -195,8 +220,8 @@ header span {
 
 @media only screen and (max-width: 380px) {
     #bone {
-        left: 45%;
-        top: 55%;
+        left: 35%;
+        top: 56%;
     }
 }
 
@@ -244,6 +269,7 @@ header span {
         width: 150px;
         height: 150px;
         left: 0%;
+        top: 55%;
     }
 }
 
@@ -295,6 +321,12 @@ header span {
     }
 }
 
+@media only screen and (max-width: 380px) {
+    #planet-purple {
+        top: 50%;
+    }
+}
+
 #planet-yellow {
     width: 89px;
     height: 89px;
@@ -325,6 +357,7 @@ input[type=email] {
 }
 
 input[type=submit] {
+    -webkit-appearance: none;
     background-color: #000;
     color: white;
     padding: 12px 10px 12px 10px;
