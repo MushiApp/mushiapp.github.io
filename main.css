@@ -201,6 +201,59 @@ header span {
     font-style: italic;
 }
 
+#cloudsA {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsA.png);
+    background-size: 411px 281px;
+    animation: wind 160s linear infinite;
+}
+
+#cloudsB {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 59%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsB.png);
+    background-size: 511px 281px;
+    animation: wind 200s linear infinite;
+}
+
+#cloudsC {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 53%;
+    background-repeat: repeat-x;
+    height: 281px;
+    width: 100%;
+    background-image: url(images/CloudsC.png);
+    background-size: 511px 281px;
+    animation: wind 240s linear infinite;
+}
+
+@keyframes wind {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 400vw 0, 200vw 0, 100vw 0;
+    }
+
+}
+
 #bone {
     width: 111px;
     height: 111px;
