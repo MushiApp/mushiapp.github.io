@@ -136,6 +136,7 @@ header {
 
 @media only screen and (max-width: 380px) {
     header {
+        background-image: url(images/background-mobile.jpg);
         height: 580px;
         background-size: 822px 600px;
     }
@@ -215,6 +216,13 @@ header span {
     animation: wind 160s linear infinite;
 }
 
+@media only screen and (max-width: 380px) {
+    #cloudsA {
+        animation: wind 60s linear infinite;
+        top: 55%;
+    }
+}
+
 #cloudsB {
     margin: 0;
     padding: 0;
@@ -229,6 +237,13 @@ header span {
     animation: wind 200s linear infinite;
 }
 
+@media only screen and (max-width: 380px) {
+    #cloudsB {
+        animation: wind 120s linear infinite;
+        top:49%;
+    }
+}
+
 #cloudsC {
     margin: 0;
     padding: 0;
@@ -240,7 +255,14 @@ header span {
     width: 100%;
     background-image: url(images/CloudsC.png);
     background-size: 511px 281px;
-    animation: wind 240s linear infinite;
+    animation: wind 180s linear infinite;
+}
+
+@media only screen and (max-width: 380px) {
+    #cloudsC {
+        animation: wind 280s linear infinite;
+        top: 43%;
+    }
 }
 
 @keyframes wind {
@@ -273,6 +295,8 @@ header span {
 
 @media only screen and (max-width: 380px) {
     #bone {
+        width: 50px;
+        height: 50px;
         left: 35%;
         top: 56%;
     }
@@ -349,8 +373,8 @@ header span {
 
 @media only screen and (max-width: 380px) {
     #dog {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         left: 0%;
         top: 55%;
     }
@@ -544,6 +568,10 @@ input[type=submit] {
     color: white;
     text-align: center;
     text-decoration: none;
+}
+
+#letter  {
+    z-index: 2;
 }
 
 @media only screen and (max-width: 880px) {
